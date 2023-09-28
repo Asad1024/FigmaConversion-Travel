@@ -10,7 +10,6 @@ import ExpStays from "./components/ExpreStays";
 import Customer from "./components/Customer";
 import Footer from "./components/Footer";
 
-
 const App = () => {
   return (
     <div className="container">

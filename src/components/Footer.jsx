@@ -7,7 +7,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className='flex justify-between p-16 bg-black text-white'>
+   <div className="flex flex-col items-center gap-5 p-16 bg-black">
+     <div className='flex justify-between gap-10  text-white'>
         <div className='flex flex-col gap-6'>
             <span className='font-bold text-2xl text-orange-500'>Logo</span>
             <span className=' w-[300px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequatur quae illo possimus doloribus quaerat natus asperiores placeat? Fugit.</span>
@@ -56,6 +57,10 @@ const Footer = () => {
         </div>
         
     </div>
+    <div className="text-white mt-14">
+        <span>Design & Develop by <span className="text-orange-600">ZySoftec</span></span>
+    </div>
+   </div>
   )
 }
 
