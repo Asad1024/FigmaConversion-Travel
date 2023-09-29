@@ -34,8 +34,8 @@ const Customer = () => {
                 <RiStarSFill/>
             </div>
         </div>
-        <div className="block md:hidden">
-          <HiDotsHorizontal/>
+        <div className="block  md:hidden">
+          <HiDotsHorizontal className="font-bold text-2xl"/>
         </div>
         <div className=" w-[350px] hidden md:flex items-center justify-center flex-col p-5 shadow-2xl rounded-md bg-white">
             <div className="flex w-[90%] items-center gap-5 bg-gray-200 p-5 rounded-md">
