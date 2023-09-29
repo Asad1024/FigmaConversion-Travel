@@ -5,12 +5,30 @@
 @tailwind utilities;
 
 .container {
-    max-width: 100vw;
-    height: 100vh;
-    background-image: url("./assets/display.png");
-    background-size: cont;
-    background-repeat: no-repeat; 
-    background-position: center;
+  /* Default styles for all screen sizes */
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/display.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; 
+    height: 310px;
+    background-size: contain;
+    .custom-thick-dashed-border {
+      border-width: 2px;
+    }
+    .custom-thick-dashed-border {
+      border-width: 0.5px;
+    }
+    
+    
+  }
 }
 
 .custom-thick-dashed-border {
@@ -31,4 +49,15 @@
   width: 100px; /* Adjust the width as needed */
   background: radial-gradient(circle at 50px 0, transparent 10px, rgba(0, 0, 0, 0.1) 20px);
   z-index: -1;
+}
+
+/* Customer.css */
+
+/* Three dots style */
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 5px;
 }

@@ -9,19 +9,21 @@ import TropicalPkg from "./components/TropicalPkg";
 import ExpStays from "./components/ExpreStays";
 import Customer from "./components/Customer";
 import Footer from "./components/Footer";
+import YourEssence from "./components/YourEssence";
 
 const App = () => {
   return (
     <div className="container">
     <Navbar/>
-    <Home />
-    <TopPick/>
+     <Home />
+     <TopPick/>
     <BetterWorld/>
     <ImageBox/>
-    <TrendingNow/>
+  <TrendingNow/>
     <ImageBoxSec/>
     <TropicalPkg/>
-    <ExpStays/>
+     <ExpStays/>
+     <YourEssence/>
     <Customer/>
     <Footer/>
     </div>

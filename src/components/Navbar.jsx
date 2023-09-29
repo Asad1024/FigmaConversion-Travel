@@ -7,12 +7,13 @@ import {
   BsSearch,
 } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import {GiHamburgerMenu} from "react-icons/gi"
 import Logo from "../assets/White _ Golden (Only Name) 1.png";
 
 const Navbar = () => {
   return (
-    <>
-      <div className="flex items-center justify-between p-4 mx-10 text-white">
+    <div className="bg-blue-900 p-2  md:bg-transparent">
+      <div className="hidden md:flex items-center justify-between p-4 mx-10 text-white">
         <div className="flex gap-3 items-center">
           <span className="bg-gray-300 rounded-full p-2">
             <BsFillTelephonePlusFill className="text-orange-400" />
@@ -43,13 +44,14 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <hr className="border-dashed border-white opacity-25 custom-thick-dashed-border" />
+      <hr className="border-dashed border-white opacity-25 custom-thick-dashed-border hidden md:block" />
 
       <div className="flex items-center justify-between mx-10 my-1">
-        <div>
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="" className="w-[170px] md:w-[250px]" />
+        <div className="block md:hidden">
+            <GiHamburgerMenu className="text-2xl text-white"/>
         </div>
-        <div className="flex items-center gap-12 text-white font-medium">
+        <div className="hidden md:flex items-center gap-12 text-white font-medium">
           <span>StayCations</span>
           <span>Holidays</span>
           <span>Booking</span>
@@ -61,7 +63,7 @@ const Navbar = () => {
           <button className="bg-teal-400 px-5 py-2 rounded-md">SignUp</button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

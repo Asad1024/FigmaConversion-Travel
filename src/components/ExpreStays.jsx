@@ -1,5 +1,7 @@
 import { AiOutlineLeft, AiOutlineRight, AiOutlineArrowRight } from "react-icons/ai";
-import cap from "../assets/dubai.jpg";
+import img1 from "../assets/exp1.png"
+import img2 from "../assets/exp2.png"
+import img3 from "../assets/exp3.png"
 
 const ExpStays= () => {
   return (
@@ -17,7 +19,7 @@ const ExpStays= () => {
               quod eveniet consequuntur, unde officia aspernatur.
             </p>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <span className="bg-orange-200 p-3 text-lg text-white font-semibold">
               <AiOutlineLeft />
             </span>
@@ -26,9 +28,9 @@ const ExpStays= () => {
             </span>
           </div>
         </div>
-        <div className="flex items-center gap-10 mt-7">
-          <div className="relative">
-            <img style={{ width: "260px", height: "330px" }} src={cap} alt="" />
+        <div className="flex flex-col md:flex-row items-center gap-10 mt-7">
+          <div className="relative flex flex-col gap-3">
+            <img src={img1} alt="" className="w-64 h-60 sm:w-full sm:h-full"  />
             <div className="mt-4">
               <h2 className=" text-xl font-bold">Evolve Back Corag</h2>
               <p className="text-orange-600 text-lg font-bold">
@@ -40,8 +42,8 @@ const ExpStays= () => {
               <AiOutlineArrowRight className="ml-3" />
             </button>
           </div>
-          <div className="relative">
-            <img style={{ width: "260px", height: "330px" }} src={cap} alt="" />
+          <div className="relative flex flex-col gap-3">
+            <img src={img2} alt="" className="w-64 h-60 sm:w-full sm:h-full"  />
             <div className="mt-4">
               <h2 className=" text-xl font-bold">Evolve Back Corag</h2>
               <p className="text-orange-600 text-lg font-bold">
@@ -53,8 +55,8 @@ const ExpStays= () => {
               <AiOutlineArrowRight className="ml-3" />
             </button>
           </div>
-          <div className="relative">
-            <img style={{ width: "260px", height: "330px" }} src={cap} alt="" />
+          <div className="relative flex flex-col gap-3">
+            <img src={img3} alt="" className="w-64 h-60 sm:w-full sm:h-full"  />
             <div className="mt-4">
               <h2 className=" text-xl font-bold">Evolve Back Corag</h2>
               <p className="text-orange-600 text-lg font-bold">
@@ -66,8 +68,8 @@ const ExpStays= () => {
               <AiOutlineArrowRight className="ml-3" />
             </button>
           </div>
-          <div className="relative">
-            <img style={{ width: "260px", height: "330px" }} src={cap} alt="" />
+          <div className="relative flex flex-col gap-3">
+            <img  src={img1} alt="" className="w-64 h-60 sm:w-full sm:h-full"  />
             <div className="mt-4">
               <h2 className=" text-xl font-bold">Evolve Back Corag</h2>
               <p className="text-orange-600 text-lg font-bold">
