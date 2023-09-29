@@ -50,14 +50,3 @@
   background: radial-gradient(circle at 50px 0, transparent 10px, rgba(0, 0, 0, 0.1) 20px);
   z-index: -1;
 }
-
-/* Customer.css */
-
-/* Three dots style */
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #000;
-  border-radius: 50%;
-  margin: 0 5px;
-}
